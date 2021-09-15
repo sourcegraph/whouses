@@ -1,18 +1,39 @@
 import {useState} from 'react'
+import {url1, url2} from './Helpers';
 
 export default function SearchBar() {
     const [npmPackage, setNpmPackage] = useState("");
-    const sgURL = 'https://sourcegraph.com/search?q=context:global+%5C%22'+npmPackage+'%5C%22:%5Cs%5C%22%28%5B*%5D%7C%5B%5C%5E4%5D%5B.%5Cd%5D%2B%29%5C%22+file:%5Epackage%5C.json+select:repo+&patternType=regexp';
+    const sgURL = url1+npmPackage+url2;
+    // Submit on Enter
+    const enterPressed = (e:any) => {
+        if(e.keyCode === 13 && e.shiftKey === false) {
+            e.preventDefault();
+            window.location.href = sgURL; 
+            return null;
+        }
+    }
+    const buttonClicked = () =>{
+        if(npmPackage){
+            window.location.href = sgURL;
+            return null;
+        }
+    }
 
     return (
         <div className='search'>
-            <p>Find out which projects use your npm package</p>
+            <p>Find out what awesome you've started with Sourcegraph...</p>
             <input type='text' 
                 className='bar'
+                placeholder='enter npm package name here'
                 onChange={(e) => {
                 setNpmPackage(e.target.value)}}
+                onKeyDown={(e) => enterPressed(e)}
             /> 
-            <a href={sgURL}><button className='btn' type='submit'>Find Out!</button></a>
+            <button 
+                className='btn' 
+                type='submit' 
+                onClick={buttonClicked}
+            >Find Out!</button>
         </div>
 
     );
