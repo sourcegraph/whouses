@@ -14,12 +14,12 @@ export default function App() {
         <div className='App'>
           <div className='App-header'>
             <SearchBar />
-            <p className='subtitle'>Some inspirations from us!</p>
+            <p className='subtitle'>👇 Some inspirations from us! 👇</p>
             <div className='grid-container'>
-              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22vercel%5C%22:%5Cs%5C%22%28%5B*%5D%7C%5B%5C%5E4%5D%5B.%5Cd%5D%2B%29%5C%22+file:%5Epackage%5C.json&patternType=regexp'>Vercel</a>
-              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22lodash%5C%22:%5Cs%5C%22%28%5B*%5D%7C%5B%5C%5E4%5D%5B.%5Cd%5D%2B%29%5C%22+file:%5Epackage%5C.json&patternType=regexp'>lodash</a>
-              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22passport%5C%22:%5Cs%5C%22%28%5B*%5D%7C%5B%5C%5E4%5D%5B.%5Cd%5D%2B%29%5C%22+file:%5Epackage%5C.json&patternType=regexp'>Passport.js</a>
-              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22express%5C%22:%5Cs%5C%22%28%5B*%5D%7C%5B%5C%5E4%5D%5B.%5Cd%5D%2B%29%5C%22+file:%5Epackage%5C.json&patternType=regexp'>Express</a>
+              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22vercel%5C":%5Cs%5C"%5B0-9a-zA-Z-~%5E*.%2B><%3D%7C%5Cs%5D%2B%5C"+file:%5Epackage%5C.json&patternType=regexp'>Vercel</a>
+              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22lodash%5C":%5Cs%5C"%5B0-9a-zA-Z-~%5E*.%2B><%3D%7C%5Cs%5D%2B%5C"+file:%5Epackage%5C.json&patternType=regexp'>lodash</a>
+              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22passport%5C":%5Cs%5C"%5B0-9a-zA-Z-~%5E*.%2B><%3D%7C%5Cs%5D%2B%5C"+file:%5Epackage%5C.json&patternType=regexp'>Passport.js</a>
+              <a className='card' href='https://sourcegraph.com/search?q=context:global+%5C%22express%5C":%5Cs%5C"%5B0-9a-zA-Z-~%5E*.%2B><%3D%7C%5Cs%5D%2B%5C"+file:%5Epackage%5C.json&patternType=regexp'>Express</a>
             </div>
             <div className='footer'>
               <p className='footer-text'>Powered by <img
