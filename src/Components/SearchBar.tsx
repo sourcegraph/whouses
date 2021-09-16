@@ -1,9 +1,9 @@
 import {useState} from 'react'
-import {url1, url2} from './Helpers';
+import {url1, version} from './Helpers';
 
 export default function SearchBar() {
     const [npmPackage, setNpmPackage] = useState("");
-    const sgURL = url1+npmPackage+url2;
+    const sgURL = url1+npmPackage+version;
     // Submit on Enter
     const enterPressed = (e:any) => {
         if(e.keyCode === 13 && e.shiftKey === false) {

@@ -25,7 +25,7 @@ export default function App() {
         </div>
       )} />
       {/* If package name in param is detected */}
-      <Route exact path="/:packageName" component={()=> (
+      <Route exact path="/:packageName/:mode?" component={()=> (
         <Redirect />
       )} />
     </Router>
