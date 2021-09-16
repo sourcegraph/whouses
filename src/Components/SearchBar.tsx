@@ -21,8 +21,9 @@ export default function SearchBar() {
 
     return (
         <div className='search'>
-            <p>Find out what awesome you've started with Sourcegraph...</p>
+            <p>Find out what awesome you've started with <a className='header-link' href='https://sourcegraph.com/search'>Sourcegraph</a>...</p>
             <input type='text' 
+                autoFocus
                 className='bar'
                 placeholder='enter npm package name here'
                 onChange={(e) => {
