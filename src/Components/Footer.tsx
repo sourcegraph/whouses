@@ -2,11 +2,11 @@ export default function Footer() {
   return (
     <div className="footer">
       <p className="footer-text">
-        <a href='https://sourcegraph.com/search'>
+        <a href='https://github.com/sourcegraph/whouses'>
           <img
-            alt="sourcegraph-logo"
-            src="https://github.com/sourcegraph/sourcegraph/blob/main/ui/assets/img/favicon.png?raw=true"
-            className="footer-logo App-logo"
+            alt="github-logo"
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            className="footer-logo"
           />
         </a>
       </p>

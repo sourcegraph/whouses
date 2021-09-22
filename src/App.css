@@ -1,6 +1,10 @@
 .App {
+  background-color: #F9FAFB;
   min-width: 600px;
-  text-align: center;
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -15,21 +19,44 @@
 }
 
 .container {
-  margin-top: 5%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 2rem;
 }
 
+.header{
+  font-weight: 600;
+}
+
+.highlight-text{
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #FF5543;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+
 .header-link{
-  color: #A112FF;
+  color: #000000;
+  text-decoration: none;
+}
+
+.tips {
+  font-size: 1rem;
+  font-style: italic;
+  color: #848484;
+  font-weight: 600;
+  padding: none;
+  margin: none;
+  cursor: pointer;
 }
 
 .subtitle {
   /* color: #6C757D; */
   font-size: 1.5rem;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .main {
@@ -64,12 +91,15 @@
 .card {
   width: 18rem;
   border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 3px 3px 0 0 #000000;
   padding: 20px;
   font-size: 1rem;
   text-align: center;
+  border-radius: 5px;
   margin: 10px;
   text-decoration: none;
   color: #6C757D;
+  font-weight: bold;
 }
 
 .card:hover {
@@ -78,20 +108,33 @@
 }
 
 .search {
+  text-align: center;
   width: 80%;
-  margin-bottom: 5%;
+  height: 10%;
 }
 
 .bar {
   width: 50%;
+  height: 100%;
   padding: 5px;
   margin-right: 1%;
+  box-shadow: 3px 3px 0 0 #000000;
 }
 
 .bar:focus {
-  outline: none !important;
-    border:1px solid #A112FF;
-    box-shadow: 0 0 10px #00CBEC;
+    outline: none !important;
+    /* border:1px solid #A112FF; */
+    /* box-shadow: 0 0 10px #000000; */
+}
+
+input, button {
+  font-size: inherit;
+  padding: 0.2em;
+  margin: 0.1em 0.2em;
+  /* the following ensures they're all using the same box-model for rendering */
+  -moz-box-sizing: content-box; /* or `border-box` */
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 /* .btn {
@@ -105,12 +148,19 @@
   padding: 5px;
   padding-right: 5px;
   padding-left: 5px;
+  border-radius: 3px;
   background-color: #A112FF;
   color: #ffffff;
-  border: none;
+  border: 1.5px solid #000000;
+  box-shadow: 3px 3px 0 0 #000000;
   font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  cursor: pointer;
 }
 
+.btn:hover {
+  background-color: #6B47D5;
+}
 
 @keyframes App-logo-spin {
   from {
@@ -125,5 +175,7 @@
   .grid-container {
     grid-template-columns: auto;
   }
-
+  .container {
+    width: none;
+  }
 }
