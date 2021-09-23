@@ -16,9 +16,11 @@ export default function App() {
         <div className='App'>
           <div className='container'>
             <SearchBar />
-            <p className='subtitle'>👇 Some <span className='highlight-text'>inspirations</span> from us! 👇</p>
-            <div className='grid-container'>
-              {generateExamples()}
+            <div className='inspirations'>
+              <p className='subtitle'>👇 Some <span className='highlight-text'>inspirations</span> from us! 👇</p>
+              <div className='grid-container'>
+                {generateExamples()}
+              </div>
             </div>
             <Footer />
           </div>
