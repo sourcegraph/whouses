@@ -1,7 +1,7 @@
 .App {
   background-color: #F9FAFB;
   min-width: 600px;
-  height: 100vh; /* Magic here */
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,14 +30,6 @@
   font-weight: 600;
 }
 
-.highlight-text{
-  padding-right: 5px;
-  padding-left: 5px;
-  background-color: #FF5543;
-  color: #FFFFFF;
-  font-weight: 500;
-}
-
 .header-link{
   color: #000000;
   text-decoration: none;
@@ -53,58 +45,8 @@
   cursor: pointer;
 }
 
-.subtitle {
-  /* color: #6C757D; */
-  font-size: 1.5rem;
-  font-weight: 400;
-}
-
 .main {
   width: 80%;
-}
-
-.footer {
-  font-size: 0.8rem;
-  font-weight: bold;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: right;
-}
-
-.footer-text {
-  padding-right: 20px;
-}
-
-.footer-logo {
-  justify-content: center;
-  max-height: 50px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-}
-
-.card {
-  width: 18rem;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  box-shadow: 3px 3px 0 0 #000000;
-  padding: 20px;
-  font-size: 1rem;
-  text-align: center;
-  border-radius: 5px;
-  margin: 10px;
-  text-decoration: none;
-  color: #6C757D;
-  font-weight: bold;
-}
-
-.card:hover {
-  background-color: #A112FF;
-  color: #FFFFFF;
 }
 
 .search {
@@ -129,20 +71,13 @@
 
 input, button {
   font-size: inherit;
-  padding: 0.2em;
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  padding: 0.5em;
   margin: 0.1em 0.2em;
-  /* the following ensures they're all using the same box-model for rendering */
-  -moz-box-sizing: content-box; /* or `border-box` */
+  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
 }
-
-/* .btn {
-  padding: 5px;
-  background-color: #ffffff;
-  color: #6C757D;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
-} */
 
 .btn {
   padding: 5px;
@@ -153,13 +88,83 @@ input, button {
   color: #ffffff;
   border: 1.5px solid #000000;
   box-shadow: 3px 3px 0 0 #000000;
-  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   cursor: pointer;
 }
 
 .btn:hover {
   background-color: #6B47D5;
+}
+
+/* Examples Section */
+.inspirations {
+  margin-top: 8%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.highlight-text{
+  padding-right: 5px;
+  padding-left: 5px;
+  background-color: #FF5543;
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.highlight-text:hover{
+  box-shadow: 3px 3px 0 0 #000000;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 3px 3px 0 0 #000000;
+  padding: 20px;
+  font-size: 1.3rem;
+  text-align: center;
+  border-radius: 3px;
+  margin: 10px;
+  text-decoration: none;
+  color: #6C757D;
+  font-weight: bold;
+}
+
+.card:hover {
+  background-color: #00CBEC;
+  color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.footer-text {
+  padding-right: 20px;
+}
+
+.footer-logo {
+  justify-content: center;
+  max-height: 50px;
 }
 
 @keyframes App-logo-spin {
